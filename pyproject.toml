@@ -3,18 +3,25 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "stt-silero-vs-pyannote"
+name = "silero-vs-pyannote"
 version = "0.0.1"
 authors = [
   { name="OpenPecha", email="dev@openpecha.org" },
 ]
 description = "A small example package"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.12.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+  "python-dotenv<=1.0.1",
+  "librosa<=0.10.2.post1",
+  "torchaudio<=2.5.1",
+  "pyannote.audio<=3.3.2",
+  "pydub<=0.25.1"
 ]
 
 [project.optional-dependencies]
