@@ -32,4 +32,4 @@ jobs:
       run: PYTHONPATH=src pytest
 
     - name: Test Coverage
-      run: PYTHONPATH=src pytest --cov stt-silero-vs-pyannote
+      run: PYTHONPATH=src pytest --cov silero-vs-pyannote
